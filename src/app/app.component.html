@@ -1,5 +1,61 @@
 <section class="container">
-  
-</section>
+  <section class="upper_data">
+    <img src="../assets/day.jpg" *ngIf="14 > 15">
+    <img src="../assets/night-2.jpg" *ngIf="14 <= 15">
+    
+    <article class="weather_data">
+      <div class="location">São Paulo</div>
+      <div class="temperature">{{ 24.40 | number: '1.0-0'}}°C</div>
+    </article>
+  </section>
+    
+    <section class="lower_data">
+      <div class="more-info-label">
+        More Information
+      </div>
+      <section class="more-info-container">
+        <!-- info block -->
+         <article class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/027_032_thermometer_temperature_control_monitoring_indicator_weather-512.webp">
+            <span>min</span>
+          </div>
+          <div class="info-block-value">
+            10°C
+          </div>
+         </article>
+        <!-- info block -->
+         <article class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/027_032_thermometer_temperature_control_monitoring_indicator_weather-512.webp">
+            <span>max</span>
+          </div>
+          <div class="info-block-value">
+            35°C
+          </div>
+         </article>
+        <!-- info block -->
+         <article class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/humidity.png">
+            <span>Humidity</span>
+          </div>
+          <div class="info-block-value">
+            40%
+          </div>
+         </article>
+        <!-- info block -->
+         <article class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/027_032_thermometer_temperature_control_monitoring_indicator_weather-512.webp">
+            <span>wind</span>
+          </div>
+          <div class="info-block-value">
+            10km/h
+          </div>
+         </article>
+      </section>
+    </section>
+</section> 
 
 <router-outlet></router-outlet>
