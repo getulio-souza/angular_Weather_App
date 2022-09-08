@@ -1,0 +1,12 @@
+<!-- upper data-->
+<section class="upper-data-container">
+  <section class="upper_data">
+    <img src="../assets/day.jpg" *ngIf="14 > 15">
+    <img src="../assets/night-2.jpg" *ngIf="14 <= 15">
+
+    <article class="weather_data">
+      <h3>São Paulo</h3>
+      <div class="temperature">{{ 24.40 | number: '1.0-0'}}°C</div>
+    </article>
+  </section>
+</section>
